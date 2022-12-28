@@ -92,5 +92,6 @@ const styles = StyleSheet.create({
     width: '85%',
     borderTopLeftRadius: 7,
     borderBottomLeftRadius: 7,
+    color: Colors?.DEFAULT_BLACK,
   },
 });
