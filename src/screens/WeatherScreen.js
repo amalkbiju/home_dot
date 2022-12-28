@@ -35,7 +35,7 @@ const WeatherScreen = () => {
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-            <Text style={styles?.temText}>{data?.main?.temp} °C</Text>
+            <Text style={styles?.temText}>{data?.current?.temp_c} °C</Text>
           </View>
           <View
             style={{
@@ -45,7 +45,7 @@ const WeatherScreen = () => {
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-            <Text style={styles?.cityName}>{data?.name}</Text>
+            <Text style={styles?.cityName}>{data?.location?.name}</Text>
           </View>
         </View>
       </View>
@@ -57,22 +57,22 @@ const WeatherScreen = () => {
             <View style={styles?.bottomCards}>
               <View style={styles?.cardTopConatiner}>
                 <Text style={styles?.cardTopText}>
-                  {data?.main?.temp_min} °C
+                  {data?.current?.temp_f} °C
                 </Text>
               </View>
               <View style={styles?.cardBottomContainer}>
-                <Text style={styles?.cardBottomText}>Temp_Min</Text>
+                <Text style={styles?.cardBottomText}>Temp_F</Text>
               </View>
             </View>
             <View style={{width: '10%'}} />
             <View style={styles?.bottomCards}>
               <View style={styles?.cardTopConatiner}>
                 <Text style={styles?.cardTopText}>
-                  {data?.main?.temp_max} °C
+                  {data?.current?.cloud} °C
                 </Text>
               </View>
               <View style={styles?.cardBottomContainer}>
-                <Text style={styles?.cardBottomText}>Temp_Max</Text>
+                <Text style={styles?.cardBottomText}>Cloud</Text>
               </View>
             </View>
             <View style={{width: '5%'}} />
@@ -85,7 +85,7 @@ const WeatherScreen = () => {
             <View style={styles?.bottomCards}>
               <View style={styles?.cardTopConatiner}>
                 <Text style={styles?.cardTopText}>
-                  {data?.main?.pressure} °C
+                  {data?.current?.pressure_in} °C
                 </Text>
               </View>
               <View style={styles?.cardBottomContainer}>
@@ -96,7 +96,7 @@ const WeatherScreen = () => {
             <View style={styles?.bottomCards}>
               <View style={styles?.cardTopConatiner}>
                 <Text style={styles?.cardTopText}>
-                  {data?.main?.humidity} °C
+                  {data?.current?.humidity} °C
                 </Text>
               </View>
               <View style={styles?.cardBottomContainer}>
