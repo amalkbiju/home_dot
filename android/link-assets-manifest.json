@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/BubblegumSans-Regular.ttf",
+      "sha1": "59d2f0ba7152be179faedefab35965d8cc28a94c"
+    },
+    {
+      "path": "src/assets/fonts/RobotoMono-VariableFont_wght.ttf",
+      "sha1": "4c4b222617ecdda163e01a88c191ab0a50c336cf"
+    },
+    {
+      "path": "src/assets/fonts/RubikBubbles-Regular.ttf",
+      "sha1": "c2c19e308f9e108e6ecebe2bd4e875b9cade5c9c"
+    },
+    {
+      "path": "src/assets/fonts/Sono-VariableFont_MONO,wght.ttf",
+      "sha1": "a1a306f035f79a002b7d0530de6234a38ab52e75"
+    }
+  ]
+}
